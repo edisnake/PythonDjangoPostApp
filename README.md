@@ -13,7 +13,7 @@ Writing/Reading permissions for sqlite3 DB
 ## Install
 
 1. Clone the repository into a python environment
-	https://github.com/edisnake/userAPI.git
+	https://github.com/edisnake/PythonDjangoPostApp.git
 	
 2. Go to Django cloned folder and run migrations into the database
 	python manage.py migrate
