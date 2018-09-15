@@ -1,0 +1,19 @@
+{% extends 'posts/layout.html' %}
+{% block content %}
+<h3 class="header col s12 light">{{title}}</h3>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="btn-floating btn-medium red" title="Save changes">
+        <i class="material-icons">save</i>
+    </button>
+    {% if post %}
+        <a title="Delete Post" class="btn-floating btn-medium red" href="{% url 'delete_post' post.id %}">
+            <i class="material-icons">delete</i>
+        </a>
+    {% endif %}
+</form>
+<br/><br/>
+<a href="/posts" class="btn-small">Go back</a>
+{% endblock %}

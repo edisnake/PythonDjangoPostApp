@@ -1,0 +1,15 @@
+{% extends 'posts/layout.html' %}
+{% block content %}
+<h3 class="header col s12 light">{{title}}</h3>
+<ul class="collection">
+    {% for post in posts %}
+        <li class="collection-item">
+            <a href="{% url 'post_details' post.id %}">{{post.title}}</a>
+            <a title="Edit" class="btn-floating btn-medium red" href="{% url 'update_post' post.id %}">
+                <i class="material-icons">mode_edit</i>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'create_post' %}" class="btn">New Post</a>
+{% endblock %}

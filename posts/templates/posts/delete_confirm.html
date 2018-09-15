@@ -1,0 +1,12 @@
+{% extends 'posts/layout.html' %}
+{% block content %}
+<h3 class="header col s12 light">{{title}}</h3>
+
+<form method="POST">
+    {% csrf_token %}
+    Please confirm if you want to delete <i>{{post.title}} - {{post.body}}</i><br/>
+    <button type="submit" class="btn-small">Confirm</button>
+</form>
+<br/><br/>
+<a href="/posts" class="btn-small">Go back</a>
+{% endblock %}

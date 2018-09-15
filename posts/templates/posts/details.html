@@ -1,0 +1,15 @@
+{% extends 'posts/layout.html' %}
+{% block content %}
+<h3 class="header light">{{title}}</h3>
+<div class="card">
+    <div class="card-content">
+        <span class="card-title">{{post.title}}</span>
+        {{post.body}}
+    </div>
+    <div class="card-action">
+        {{post.created_ts}}
+    </div>
+</div>
+<a href="/posts" class="btn">Go back</a>
+<br/><br/>
+{% endblock %}
