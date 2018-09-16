@@ -2,7 +2,7 @@
 
 This is a Django project to create a Blog site containing a Django app called Post which implements Create, Read, Update and Delete operations (CRUD).
 
-This app was built using Django 2.1 and MaterializeCSS with Google Material Icons for templates. Also implements the layout UI Pattern.
+This app was built using Django 2.1 and MaterializeCSS with Google Material Icons for templates. Also implements Responsive Design and the layout UI Pattern.
 
 
 ## Server Dependencies
@@ -36,6 +36,8 @@ Writing/Reading permissions for sqlite3 DB
 	2.1 When you click on the post's title, going to be redirected to another page where you can just see the post's info, in this case, you will not be able to modify nor delete the post.
 	
 	2.2 When you click on a post's pencil icon, going to be redirected to another page where you will have the ability to update its data or delete the post.
+
+	![djangopostapp](https://user-images.githubusercontent.com/1470750/45596755-c5cb6e80-b986-11e8-966a-60d4acd523e0.gif)
 	
 
 ## Author
